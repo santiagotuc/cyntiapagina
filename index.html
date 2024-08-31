@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUTRICIONISTA CYNTIA HERRERA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #aa359b;
+            color: white;
+            padding:160px;
+            text-align: center;
+            background-image: url(/cyntia.jpg); 
+            background-size: 35% ;
+            background-position: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #a33992;
+        }
+
+        .columnas {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .columna {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #dfa6d5;
+            width: 80%;
+        }
+
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NUTRICIONISTA CYNTIA HERRERA</h1>
+    </header>
+    
+    <nav>
+        <a href="#servicio-online">Servicio Online</a>
+        <a href="#blog-de-nutricion">Blog de Nutrición</a>
+        <a href="#pedir-una-cita">Pedir una Cita</a>
+        <div class="dropdown">
+            <br>
+            <a href="#contacto">Contacto</a>
+            <div class="dropdown-content">
+                <a href="tel:+543816868515">Teléfono: +543816868515</a>
+                <a href="mailto:correo@ejemplo.com">Correo:cyntiolivera@gmail.com</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="servicio-online"></section>
+            <h2>Atención online y Presencial</h2>
+            <p>Preparamos el plan adecuado a tu actividad y objetivo. Ej: Aumentar Masa Muscular y pérdida de Masa grasa.</p>
+            <p>Asesoramiento sobre suplementos nutricionales de: Alto rendimiento, Rehidratantes, Reconstituyentes, Multivitamínicos, Energizantes, Adelgazantes. En Deportólogos + Nutricionistas tenemos como meta satisfacer las necesidades del deportista.</p>
+            <p>Prestamos cuidadosa atención a los requerimientos específicos en la práctica de cada actividad deportiva tanto a nivel profesional como amateur, evitando así los trastornos que puede generar el desarrollo de las diferentes disciplinas.</p>
+            <p>Atención online y presencial. Solicitá tu turno completando el formulario.</p>
+        </section>
+        <div class="columnas">
+            <div class="columna">
+                <h3>HIDRATOS DE CARBONO</h3>
+                <p>HC</p>
+                <p>IMPORTANTES para dar energía al cuerpo. No deben faltar del plan alimentario.</p>
+                <p>Son los primeros nutrientes en los cuales focalizar para tener combustible necesario para realizar el entrenamiento y para estimular el crecimiento muscular.</p>
+            </div>
+            <div class="columna">
+                <h3>PROTEÍNAS</h3>
+                <p>P</p>
+                <p>Estas contienen en su interior aminoácidos fundamentales para el organismo. Hay que tener en cuenta que el cuerpo utiliza una cierta cantidad y si consumimos más de lo debido sobrecargamos el trabajo del riñón y del hígado y lo podemos dañar a largo plazo.</p>
+                <p>El plan alimentario personalizado que brindamos cubre la cantidad adecuada de proteínas según el tipo de actividad que efectúe el paciente, intensidad y frecuencia de la misma. La cantidad de proteínas varía entre 0,8 a 2,2 gramos/kg de peso/día…</p>
+            </div>
+            <div class="columna">
+                <h3>VITAMINAS, MINERALES, LÍPIDOS…</h3>
+                <p>VML</p>
+                <p>Preparamos el plan adecuado a tu actividad y objetivo. Ej: Aumentar Masa Muscular y pérdida de Masa grasa.</p>
+            </div>
+        </div>
+        <!-- Sección de Blog de Nutrición -->
+        <section id="blog-de-nutricion">
+            <h2>Blog de Nutrición</h2>
+            <p>Descubre las últimas novedades en nutrición deportiva, infantil y en Tucumán, Argentina.</p>
+            <!-- Enlace a una página externa o sección del blog -->
+            <a href="blog.html" target="_blank">Visitar Blog</a>
+        </section>
+
+        <!-- Modal para Pedir una Cita -->
+        <div id="pedir-una-cita" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Pedir una Cita</h2>
+                <form id="citaForm">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" min="08:00" max="12:00" required>
+                    
+                    <button type="submit">Reservar</button>
+                </form>
+                <div id="citaConfirmacion" class="result"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Calculadora de Peso Ideal e IMC</h3>
+        <p>Peso (kg): <input type="number" id="peso" /></p>
+        <p>Altura (cm): <input type="number" id="altura" /></p>
+        <input type="button" value="Calcular" onclick="calcularIMC()" />
+        <p id="resultado"></p>
+    </footer>
+
+    <script>
+        function calcularIMC() {
+            const peso = parseFloat(document.getElementById('peso').value);
+            const altura = parseFloat(document.getElementById('altura').value) / 100;
+
+            if (isNaN(peso) || isNaN(altura) || altura === 0) {
+                alert('Por favor, ingrese valores válidos');
+                return;
+            }
+
+            const imc = peso / (altura * altura);
+            let resultado = 'Su IMC es ' + imc.toFixed(2) + '. ';
+
+            if (imc < 18.5) {
+                resultado += 'Está por debajo del peso ideal.';
+            } else if (imc >= 18.5 && imc <= 24.9) {
+                resultado += 'Tiene un peso normal.';
+            } else if (imc >= 25 && imc <= 29.9) {
+                resultado += 'Está en sobrepeso.';
+            } else {
+                resultado += 'Tiene obesidad.';
+            }
+
+            document.getElementById('resultado').textContent = resultado;
+        }
+    </script>
+
+</body>
+</html>
